@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline Soil Analysis</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <h1>Offline Soil Analysis</h1>
+
+  <div id="loadingContainer">
+    <div id="loadingStatus">Loading model<span id="dots"></span></div>
+    <div id="progressBarContainer">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="appContainer" style="display:none;">
+    <input type="file" id="fileInput" accept=".pdf,.csv">
+    <div id="output"></div>
+
+    <div id="chatContainer">
+      <h2>Ask about your soil</h2>
+      <div id="chatLog"></div>
+      <input type="text" id="chatInput" placeholder="Ask a question..." />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
