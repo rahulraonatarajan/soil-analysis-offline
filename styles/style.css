@@ -1,0 +1,74 @@
+
+body { font-family: Arial, sans-serif; margin: 2em; background: #f5f5f5; }
+h1 { text-align: center; }
+
+#loadingContainer {
+  text-align: center;
+  margin: 2em auto;
+}
+
+#loadingStatus {
+  font-size: 1.2em;
+}
+
+#progressBarContainer {
+  width: 60%;
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin: 1em auto;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+#appContainer {
+  margin-top: 2em;
+}
+
+#output {
+  margin-top: 2em;
+  white-space: pre-wrap;
+  padding: 1em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#chatContainer {
+  margin-top: 2em;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
+
+#chatLog {
+  background-color: white;
+  padding: 1em;
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#chatInput {
+  width: 70%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#chatSend {
+  padding: 0.5em 1em;
+  margin-left: 0.5em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
